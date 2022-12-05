@@ -1,0 +1,18 @@
+// utils
+@import './utils/variables';
+@import './basic/reset';
+@import './basic/common';
+@import './basic/animation';
+@import './utils/visually-hidden';
+
+@import './components/sections/header';
+@import './components/modal-form';
+@import './components/sections/hero';
+@import './components/sections/feauters';
+@import './components/sections/services';
+@import './components/sections/team';
+@import './components/sections/clients';
+@import './components/sections/footer';
+@import './components/sections/portfolio-filters';
+@import './components/sections/portfolio-gallery';
+@import './components/slider-top';

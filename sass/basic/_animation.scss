@@ -1,0 +1,17 @@
+@keyframes slide-top {
+    from {
+      transform: scale(0.9);
+    }
+    to {
+      transform: scale(1.1);
+    }
+}
+
+@keyframes scaler {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}

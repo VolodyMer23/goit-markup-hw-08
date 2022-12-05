@@ -1,0 +1,40 @@
+/* =====  CONTACTS  ===== */
+
+.header-contacts__list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 50px;
+}
+
+.header-contacts__item {
+  display: block;
+}
+
+.header-contacts__icon-envelope {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header-contacts__icon-smartphone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header-contacts__link {
+  display: flex;
+  align-items: center;
+  color: var(--secondary-text-color);
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-color);
+    fill: var(--primary-color);
+  }
+}

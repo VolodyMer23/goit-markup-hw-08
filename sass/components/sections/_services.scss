@@ -1,0 +1,54 @@
+/*
+  ============================
+         Services section
+  ============================
+*/
+
+.services {
+    position: relative;
+    padding-top: 0;
+    z-index: 3;
+  }
+  
+  .services__container {
+    flex-direction: column;
+  }
+  
+  .services__title {
+    color: var(--primary-text-color);
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .services__list {
+    display: inline-flex;
+    gap: 30px;
+  }
+  
+  .services__item {
+    position: relative;
+    width: 100%;  
+  }
+    
+  .services__text {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(47, 48, 58, 0.8);
+    z-index: 3;
+  }

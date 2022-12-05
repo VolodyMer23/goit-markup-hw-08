@@ -1,0 +1,91 @@
+/*
+  ============================
+         Team section
+  ============================
+*/
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team__container {
+  flex-direction: column;
+}
+
+.card__post {
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.card__text {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.member-list {
+  gap: 30px;
+  display: flex;
+}
+
+.card-soc__item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.member-card {
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card-soc {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.card-soc__icon {
+  display: flex;
+  fill: var(--svg-primary-color);
+  transition: fill var(--animation);
+}
+
+.card-soc__link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    fill: var(--button-text-color);
+    background-color: var(--primary-color);
+  }
+}
+
+.card-soc__link:hover .card-soc__icon,
+.card-soc__link:focus .card-soc__icon {
+  fill: #ffffff;
+}

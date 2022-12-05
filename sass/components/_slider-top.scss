@@ -1,0 +1,19 @@
+/* ===== Slider Button ===== */
+.scroll-to-top {
+  position: fixed;
+  bottom: 105px;
+  right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  animation: slide-top 750ms linear 1500ms infinite alternate both;
+}
+.arrow-top {
+  fill: #fff;
+}

@@ -1,0 +1,32 @@
+/*
+  ============================
+         Header section
+  ============================
+*/
+
+/* =====  HEADER  ===== */
+.header {
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+  position: relative;
+}
+
+.header__container {
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
+.header-line {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-13.5%);
+  width: 1600px;
+  height: 0;
+  border-bottom: 1px solid #ececec;
+  z-index: 4;
+}
+
+@import '../sections/header/header-logo';
+@import '../sections/header/navigation';
+@import '../sections/header/contacts';
