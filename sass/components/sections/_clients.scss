@@ -10,14 +10,30 @@
   
   .clients__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
+
+    @media screen and (min-width: 480px) {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      flex-wrap: wrap;
+      align-items: baseline; 
+      text-align: left;
+      justify-content: space-between;
+    }
   }
   
   .clients__item {
     width: 170px;
     height: 92px;
     background-color: #ffffff;
+    flex-basis: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - (2 * 30px)) / 3);
+    }
   }
   
   .client__link {

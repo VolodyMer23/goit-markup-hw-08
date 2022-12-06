@@ -5,7 +5,8 @@
 */
 
 .feauters-wrap {
-    justify-content: baseline;
+  display: block;
+    // justify-content: baseline;
   }
   
   .feauters__post {
@@ -15,31 +16,60 @@
     text-transform: uppercase;
     margin-bottom: 10px;
   }
+
   .feauters__text {
     color: var(--secondary-text-color);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    text-align: left;
   }
   
   .feauters__list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
-    align-items: baseline;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      flex-wrap: wrap;
+      align-items: baseline; 
+      text-align: left;
+      justify-content: space-between;
+    }
   }
+ 
   .feauters__item {
     display: block;
+    
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - (3 * 30px)) / 4);
+    }
   }
+
   .feauters__icon-wrapper {
     display: flex;
-    width: 270px;
     height: 120px;
     margin-bottom: 30px;
     background-color: #f5f4fa;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media screen and (min-width: 480px) {
+    width: 100%;
+    }
+
+    @media screen and (min-width: 1200px) {
+    width: 270px;  
   }
+}
   
   .feauters__icon {
     background-repeat: no-repeat;

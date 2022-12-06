@@ -1,13 +1,20 @@
 /* =====  LOGO  ===== */
 
 .header__logo {
+  display: block;
     color: #000000;
     font-family: "Raleway";
     font-weight: 700;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.19;
-    padding-top: 25px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media screen and (min-width: 480px) and (max-width:1600px) {
+      font-size: 26px;
+      padding-top: 25px;
     padding-bottom: 25px;
+    }
   }
   
   .header__logo--accent {
