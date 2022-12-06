@@ -1204,20 +1204,56 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  gap: 93px;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 93px;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 /* ===== Adress Block ===== */
+@media screen and (max-width: 1199px) {
+  .footer-group {
+    text-align: center;
+  }
+}
+
 .footer__logo {
   color: #ffffff;
   font-family: "Raleway";
@@ -1274,6 +1310,11 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media screen and (max-width: 1199px) {
+  .footer-soc {
+    text-align: center;
+  }
 }
 
 .footer-soc__headline {
@@ -1352,6 +1393,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .subscription__headline {
@@ -1371,7 +1415,25 @@ img {
   display: -ms-flexbox;
   display: flex;
   background: transparent;
-  gap: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscription-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 12px;
+  }
 }
 
 .subscription__label {
@@ -1381,6 +1443,12 @@ img {
   outline: none;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .subscription__label {
+    margin-bottom: 0;
+  }
 }
 
 .subscription__input {
@@ -1393,16 +1461,21 @@ img {
   padding: 12px 13px;
   min-width: 358px;
   height: 50px;
-  color: #FFFFFF;
+  color: #ffffff;
   -webkit-transition: color var(--animation), border var(--animation);
   transition: color var(--animation), border var(--animation);
 }
 .subscription__input:focus {
-  color: #FFFFFF;
+  color: #ffffff;
   border: 1px solid var(--primary-color);
 }
 .subscription__input:hover {
   border: 1px solid var(--primary-color);
+}
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .subscription__input {
+    width: 450px;
+  }
 }
 
 .subscription__btn {
@@ -1413,7 +1486,7 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  min-width: 200px;
+  max-width: 200px;
   padding: 0;
   margin: 0;
   display: -webkit-box;
