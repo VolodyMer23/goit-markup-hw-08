@@ -6,37 +6,31 @@
 
 /* =====  HEADER  ===== */
 .header {
+  background: #ffffff;
   margin-left: auto;
   margin-right: auto;
-  background: #ffffff;
-  
-
   @media screen and (min-width: 480px) {
     width: 480px;
-    
-  }
-
-  @media screen and (max-width: 767px) {
-    position: relative;
   }
 
   @media screen and (min-width: 768px) {
     width: 768px;
-    
-    
   }
 
   @media screen and (min-width: 1200px) and (max-width: 1600px) {
     width: 100%;
-    
-    // position: relative;
   }
 }
 
 .header__container {
+  margin-right: auto;
+  margin-left: auto;
   border-bottom: 1px solid #ececec;
   @media screen and (min-width: 480px) {
     width: 480px;
+  }
+  @media screen and (max-width: 767px) {
+    position: relative;
   }
 
   @media screen and (min-width: 768px) {
@@ -47,22 +41,9 @@
 
   @media screen and (min-width: 1200px) and (max-width: 1600px) {
     width: 100%;
-    
-    // position: relative;
   }
 }
 
-
-// .header-line {
-//   position: absolute;
-//   bottom: 0;
-//   // transform: translateX(-13.5%);
-//   width: 100%;
-//   height: 0;
-//   border-bottom: 1px solid #ececec;
-//   z-index: 4;
-// }
-
-@import '../sections/header/header-logo';
-@import '../sections/header/navigation';
-@import '../sections/header/contacts';
+@import "../sections/header/header-logo";
+@import "../sections/header/navigation";
+@import "../sections/header/contacts";

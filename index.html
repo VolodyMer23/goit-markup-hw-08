@@ -29,9 +29,10 @@
         <div class="mobile-menubtn">
           <button
             type="button"
-            class="mobile-menu__btn is-open btn"
+            class="mobile-menu__btn  btn"
             aria-expanded="false"
-            data-mobile-menu
+            aria-controls="menu-container"
+            data-menu-button
           >
             <svg width="40" height="40" aria-label="кнопка переключения меню">
               <use
@@ -94,7 +95,7 @@
             >
           </li>
         </ul>
-        <div class="mobile-menu">
+        <div class="mobile-menu" id="menu-container" data-menu>
           <ul class="mobile-menu__list list">
             <li class="mobile-menu__item">
               <a
@@ -114,6 +115,11 @@
           </ul>
           <ul class="mobile-contacts__list list">
             <li class="mobile-contacts__item">
+              <a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__link--phone link">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-contacts__item">
               <a
                 href="mailto:info@devstudio.com"
                 class="mobile-contacts__link link"
@@ -121,11 +127,12 @@
                 info@devstudio.com</a
               >
             </li>
-            <li class="mobile-contacts__item">
-              <a href="tel:+380961111111" class="mobile-contacts__link link">
-                +38 096 111 11 11</a
-              >
-            </li>
+            <ul class="mobile-soc__list list">
+              <li class="mobile-soc__item"><a href="#" class="mobile-soc__link link">Instagram</a></li>
+              <li class="mobile-soc__item"><a href="#" class="mobile-soc__link link">Twitter</a></li>
+              <li class="mobile-soc__item"><a href="#" class="mobile-soc__link link">Facebook</a></li>
+              <li class="mobile-soc__item"><a href="#" class="mobile-soc__link link">LinkedIn</a></li>
+            </ul>
           </ul>
         </div>
         <div class="header-line"></div>
