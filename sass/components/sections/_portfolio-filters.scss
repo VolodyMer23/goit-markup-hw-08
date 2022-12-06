@@ -18,8 +18,12 @@
   
   .portfolio-filters {
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 50px;
+    @media screen and (min-width: 768px) {
+      flex-wrap: nowrap;
+    }
   }
   
   .filter__item {
@@ -33,7 +37,7 @@
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    min-width: 73px;
+    // min-width: 73px;
     height: 38px;
     background-color: #F5F4FA;
     border-radius: 4px;
