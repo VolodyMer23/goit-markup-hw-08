@@ -149,6 +149,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
 }
 
 .subscription__headline {
@@ -168,6 +172,7 @@
   background: transparent;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -217,7 +222,7 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  max-width: 200px;
+  width: 200px;
   padding: 0;
   margin: 0;
   display: flex;

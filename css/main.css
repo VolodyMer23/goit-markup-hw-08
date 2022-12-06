@@ -1400,6 +1400,13 @@ img {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .subscription {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 
 .subscription__headline {
   font-family: var(--primary-font-family);
@@ -1425,6 +1432,9 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 1200px) {
   .subscription-form {
@@ -1489,7 +1499,7 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  max-width: 200px;
+  width: 200px;
   padding: 0;
   margin: 0;
   display: -webkit-box;
