@@ -17,11 +17,13 @@
     @media screen and (min-width: 480px) {
       display: flex;
       flex-direction: row;
-      gap: 30px;
-      flex-wrap: wrap;
       align-items: baseline; 
       text-align: left;
       justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
     }
   }
   
