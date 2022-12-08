@@ -1790,6 +1790,15 @@ img {
   display: block;
 }
 
+.filter__item:nth-child(3n) {
+  margin-right: 50px;
+}
+@media screen and (min-width: 768px) {
+  .filter__item:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
 .filter__button {
   color: var(--primary-text-color);
   font-family: inherit;
@@ -1901,10 +1910,16 @@ img {
 
 .card__name {
   color: var(--primary-text-color);
-  font-size: 18px;
-  line-height: 2;
+  font-size: 17px;
+  line-height: 1.56;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
+}
+@media screen and (min-width: 1200px) {
+  .card__name {
+    font-size: 18px;
+    line-height: 2;
+  }
 }
 
 .card__text {

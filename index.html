@@ -115,7 +115,10 @@
           </ul>
           <ul class="mobile-contacts__list list">
             <li class="mobile-contacts__item">
-              <a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__link--phone link">
+              <a
+                href="tel:+380961111111"
+                class="mobile-contacts__link mobile-contacts__link--phone link"
+              >
                 +38 096 111 11 11</a
               >
             </li>
@@ -128,10 +131,18 @@
               >
             </li>
             <ul class="mobile-soc__list list">
-              <li class="mobile-soc__item"><a href="#" class="mobile-soc__link link">Instagram</a></li>
-              <li class="mobile-soc__item"><a href="#" class="mobile-soc__link link">Twitter</a></li>
-              <li class="mobile-soc__item"><a href="#" class="mobile-soc__link link">Facebook</a></li>
-              <li class="mobile-soc__item"><a href="#" class="mobile-soc__link link">LinkedIn</a></li>
+              <li class="mobile-soc__item">
+                <a href="#" class="mobile-soc__link link">Instagram</a>
+              </li>
+              <li class="mobile-soc__item">
+                <a href="#" class="mobile-soc__link link">Twitter</a>
+              </li>
+              <li class="mobile-soc__item">
+                <a href="#" class="mobile-soc__link link">Facebook</a>
+              </li>
+              <li class="mobile-soc__item">
+                <a href="#" class="mobile-soc__link link">LinkedIn</a>
+              </li>
             </ul>
           </ul>
         </div>
@@ -283,31 +294,53 @@
           <ul class="services__list list">
             <li class="services__item item">
               <picture>
-                <source srcset="./images/desk/web-desk@1x.jpg 1x, ./images/desk/web-desk@2x.jpg 2x" media="(min-width: 1200px)">
+                <source
+                  srcset="
+                    ./images/desk/web-desk@1x.jpg 1x,
+                    ./images/desk/web-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
                 <img
-                class="services__img"
-                src="./images/1-web.jpg"
-                alt="Верстка веб-сторінок. Програміст пише код для веб-сайту"
-                
-              />
+                  class="services__img"
+                  src="./images/1-web.jpg"
+                  alt="Верстка веб-сторінок. Програміст пише код для веб-сайту"
+                />
               </picture>
               <p class="services__text">Десктопні додатки</p>
             </li>
             <li class="services__item item">
-              <img
-                src="./images/2-soft.jpg"
-                alt="Розробка додатків. Дизайнер розробляє інтерфейс додатку"
-                
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desk/soft-desk@1x.jpg 1x,
+                    ./images/desk/soft-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/2-soft.jpg"
+                  alt="Розробка додатків. Дизайнер розробляє інтерфейс додатку"
+                />
+              </picture>
               <p class="services__text">Мобільні додатки</p>
             </li>
 
             <li class="services__item item">
-              <img
-                src="./images/3-color.jpg"
-                alt="Дизайнерські послуги. Креативний дизайнер підбирає колір на графічному планшеті"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desk/color-desk@1x.jpg 1x,
+                    ./images/desk/color-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/3-color.jpg"
+                  alt="Дизайнерські послуги. Креативний дизайнер підбирає колір на графічному планшеті"
+                  width="370"
+                />
+              </picture>
               <p class="services__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -318,7 +351,12 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="member-list list">
             <li class="member-card item">
-              <img src="./images/igor.jpg" width="450" alt="Ігор Дем'яненко" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/desk/igor-desk@1x.jpg 1x, ./images/desk/igor-desk@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/tab/igor-tab@1x.jpg 1x, ./images/tab/igor-tab@2x.jpg 2x">
+                <source media="(min-width: 480px)" srcset="./images/mob/igor-mob@1x.jpg 1x, ./images/mob/igor-mob@2x.jpg 2x">
+                <img src="./images/igor.jpg" width="450" alt="Ігор Дем'яненко"
+              /></picture>
               <div class="card">
                 <h3 class="card__post poststyle">Ігор Дем'яненко</h3>
                 <p class="card__text textstyle">Product Designer</p>
@@ -355,7 +393,12 @@
               </div>
             </li>
             <li class="member-card item">
-              <img src="./images/olga.jpg" width="450" alt="Ольга Рєпіна" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/desk/olga-desk@1x.jpg 1x, ./images/desk/olga-desk@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/tab/olga-tab@1x.jpg 1x, ./images/tab/olga-tab@2x.jpg 2x">
+                <source media="(min-width: 480px)" srcset="./images/mob/olga-mob@1x.jpg 1x, ./images/mob/olga-mob@2x.jpg 2x">
+                <img src="./images/olga.jpg" width="450" alt="Ольга Рєпіна"
+              /></picture>
               <div class="card">
                 <h3 class="card__post poststyle">Ольга Рєпіна</h3>
                 <p class="card__text textstyle">Frontend Developer</p>
@@ -392,7 +435,12 @@
               </div>
             </li>
             <li class="member-card item">
-              <img src="./images/mykola.jpg" width="450" alt="Микола Тарасов" />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/desk/mykola-desk@1x.jpg 1x, ./images/desk/mykola-desk@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/tab/mykola-tab@1x.jpg 1x, ./images/tab/mykola-tab@2x.jpg 2x">
+                <source media="(min-width: 480px)" srcset="./images/mob/mykola-mob@1x.jpg 1x, ./images/mob/mykola-mob@2x.jpg 2x">
+                <img src="./images/mykola.jpg" width="450" alt="Микола Тарасов"
+              /></picture>
               <div class="card">
                 <h3 class="card__post poststyle">Микола Тарасов</h3>
                 <p class="card__text textstyle">Marketing</p>
@@ -429,11 +477,16 @@
               </div>
             </li>
             <li class="member-card item">
-              <img
-                src="./images/mykhailo.jpg"
-                width="450"
-                alt="Михайло Єрмаков"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/desk/mykhailo-desk@1x.jpg 1x, ./images/desk/mykhailo-desk@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/tab/mykhailo-tab@1x.jpg 1x, ./images/tab/mykhailo-tab@2x.jpg 2x">
+                <source media="(min-width: 480px)" srcset="./images/mob/mykhailo-mob@1x.jpg 1x, ./images/mob/mykhailo-mob@2x.jpg 2x">
+                <img
+                  src="./images/mykhailo.jpg"
+                  width="450"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
               <div class="card">
                 <h3 class="card__post poststyle">Михайло Єрмаков</h3>
                 <p class="card__text textstyle">UI Designer</p>

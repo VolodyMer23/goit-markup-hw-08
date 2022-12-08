@@ -30,6 +30,13 @@
     display: block;
   }
    
+  .filter__item:nth-child(3n) {
+    margin-right: 50px;
+    @media screen and (min-width: 768px) {
+      margin-right: 0;
+    }
+  }
+
   .filter__button {
     color: var(--primary-text-color);
     font-family: inherit;
